@@ -48,29 +48,57 @@ table {
 }
 
 /*---------------Custom CSS----------------*/
-h1 {
-    font-size: 2em;
-    color: white;
-}
-
-#formWrapper {
-    margin: 1em;
-    min-width: 15em;
-    max-width: 20em;
-    font-size: 1.5em;
-    line-height: 1.5em
-    
-}
-
-#formWrapper input {
-    float: right;
-    line-height: 1.5em;
+body {
+    background-color: #FAFAFA;
 }
 
 #headerWrapper {
     width: 100%;
-    background-color: black;
-    padding: 1em;
+    background-color: #2a2a2a;
+    padding: 2em;
+}
+
+h1 {
+    font-family: 'Patua One', cursive;
+    font-size: 3.375em;
+    color: beige;
+}
+
+h2 {
+    font-family: 'Mate SC', serif;   
+    font-size: 2.25em;
+    line-height: 2.25em;
+    font-weight: 600;
+    color: darkslateblue;
+}
+
+
+
+#bodyWrapper {
+    font-family: 'Mate SC', serif; 
+    margin: 2em;
+    min-width: 12em;
+    max-width: 40em;
+    line-height: 30px; 
+}
+
+#bodyWrapper input, select {
+    
+    float: right;
+    height: 1.4em;
+    width: 40%
+}
+
+
+
+
+#sethpic {
+    display: flex;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid darkgrey;
+        
 }
 
 
