@@ -48,10 +48,30 @@ table {
 }
 
 /*---------------Custom CSS----------------*/
-#formWrapper {
-    margin: 1em;
+h1 {
+    font-size: 2em;
+    color: white;
 }
 
+#formWrapper {
+    margin: 1em;
+    min-width: 15em;
+    max-width: 20em;
+    font-size: 1.5em;
+    line-height: 1.5em
+    
+}
+
+#formWrapper input {
+    float: right;
+    line-height: 1.5em;
+}
+
+#headerWrapper {
+    width: 100%;
+    background-color: black;
+    padding: 1em;
+}
 
 
 
