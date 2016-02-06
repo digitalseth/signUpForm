@@ -35,6 +35,7 @@
         </label>
         <br />
         <button id="submit">Sign up</button>
+        <br />
         
         <div id="thankYouBox"></div>
    
@@ -53,8 +54,28 @@
         
         
         function btnClickFunc(){
-            console.log(namebox.value); 
-            tyBox.innerHTML = "THANK YOU FOR SIGNING UP!" ;
+            var formValid = true;
+            
+            if(namebox.value === '') {
+                namebox.style.backgroundColor = "red";
+                formValid = false;
+               
+            }
+            
+             if(phone.value === '') {
+                phone.style.backgroundColor = "red";
+                formValid = false;
+                
+            }
+            
+             if(email.value === '') {
+                email.style.backgroundColor = "red";
+                formValid = false;
+            }
+            
+            
+            if (formValid === true)
+                tyBox.innerHTML = "THANK YOU FOR SIGNING UP!" ;
             
         }
             
