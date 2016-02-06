@@ -106,7 +106,18 @@ select {
     margin-left: auto;
     margin-right: auto;
     border: 1px solid darkgrey;
-        
+    animation-duration: 5s;
+    animation-name: customFade;
+}
+
+@keyframes customFade {
+    from {
+        opacity: .01;
+    }
+    
+    to {
+        opacity: 1;
+    }
 }
 
 #notebookpic {
@@ -114,6 +125,14 @@ select {
     width: 4em;
     margin-right: 1em;
 }
+
+#thankYouBox {
+    font-size: 2em;
+    font-weight: 600;
+    line-height: 2em;
+}
+
+
 
 @media (max-width: 600px){
     #notebookpic {
