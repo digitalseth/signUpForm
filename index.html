@@ -58,25 +58,27 @@
             
             if(namebox.value === '') {
                 namebox.style.backgroundColor = "red";
-                formValid = false;
-               
+                formValid = false;   
             }
-            
+            else
+                namebox.style.backgroundColor = "limegreen";
+
              if(phone.value === '') {
                 phone.style.backgroundColor = "red";
-                formValid = false;
-                
+                formValid = false;    
             }
+            else
+                phone.style.backgroundColor = "limegreen";
             
              if(email.value === '') {
                 email.style.backgroundColor = "red";
                 formValid = false;
             }
-            
+             else
+                email.style.backgroundColor = "limegreen";
             
             if (formValid === true)
                 tyBox.innerHTML = "THANK YOU FOR SIGNING UP!" ;
-            
         }
             
         
