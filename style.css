@@ -70,22 +70,34 @@ h2 {
     font-size: 2.25em;
     line-height: 2.25em;
     font-weight: 600;
-    color: darkslateblue;
+    color: darkslategrey;
 }
 
 #bodyWrapper {
     font-family: 'Mate SC', serif; 
-    margin: 1.5em;
+    margin: 0;
+    padding: 1em;
     min-width: 12em;
     max-width: 40em;
-    line-height: 30px; 
+    line-height: 2em; 
 }
 
-#bodyWrapper input, select {
+#bodyWrapper input {
     float: right;
     height: 1.5em;
     width: 40%;
 }
+
+label {
+    font-size: 1em;
+}
+
+select {
+    float: right;
+    height: 2em;
+    width: 40.75%;
+}
+
 
 
 #sethpic {
@@ -109,7 +121,7 @@ h2 {
     }
     
     h1 {
-        font-size: 2em;
+        font-size: 1.4em;
     }
 }
 
