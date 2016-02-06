@@ -22,10 +22,9 @@
         <img id="sethpic" src='crown.jpg' alt="Pic of Crown" />
         
         <h2>Your info:</h2>
-        <label>First Name<input type="text" /></label><br />
-        <label>Last Name<input type="text" /></label><br />
-        <label>Phone Number<input type="text" /></label><br />
-        <label>Email Address<input type="text" /></label><br />
+        <label>Full Name<input type="text" id="name"/></label><br />
+        <label>Phone Number<input type="text" id="phone"/></label><br />
+        <label>Email Address<input type="text" id="email"/></label><br />
         <label>Relation to Seth
         <select>
             <option>Friend</option>
@@ -33,12 +32,36 @@
             <option>Co-worker</option>
             
         </select>
-        
         </label>
+        <br />
+        <button id="submit">Sign up</button>
+        
+        <div id="thankYouBox"></div>
    
         
     </div>
     
+    <script>
+        //get elements
+        var namebox = document.getElementById("name");
+        var phone = document.getElementById("phone");
+        var email = document.getElementById("email");
+        var submit = document.getElementById("submit");
+        var tyBox = document.getElementById("thankYouBox");
+        
+        submit.addEventListener("click", btnClickFunc);
+        
+        
+        function btnClickFunc(){
+            console.log(namebox.value); 
+            tyBox.innerHTML = "THANK YOU FOR SIGNING UP!" ;
+            
+        }
+            
+        
+            
+        
+    </script>
 </body>
    
     
