@@ -23,18 +23,13 @@
 
   <h2>Your info:</h2>
  
-    
-  
-  
   <div id="inputboxes">
     <label for="name">Full Name</label> 
-    <input type="text" id="name"/>
-
-
-    <label for="phone">Phone Number</label>
-    <input type="text" id="phone"/>
+    <input type="text" id="name" pattern="^.+$" />
+    <label for="phone" >Phone Number</label>
+    <input type="text" id="phone" placeholder="1112224567" pattern="^[0-9]{10,}$"/>
     <label for="email">Email Address</label>
-    <input type="text" id="email"/>
+    <input type="text" id="email" placeholder="you@email.com" pattern="^.+@.+$" />
     <label for="relation">Relation to Seth</label>
     <select id="relation">
       <option>Friend</option>
@@ -48,46 +43,6 @@
   <div id="thankYouBox"></div>
 
 </div>
-
-<script>
-    //get elements
-    var namebox = document.getElementById("name");
-    var phone = document.getElementById("phone");
-    var email = document.getElementById("email");
-    var submit = document.getElementById("submit");
-    var tyBox = document.getElementById("thankYouBox");
-
-    submit.addEventListener("click", btnClickFunc);
-
-
-    function btnClickFunc(){
-      var formValid = true;
-
-      if(namebox.value === '') {
-          namebox.style.backgroundColor = "#FABCBC";
-          formValid = false;   
-      }
-      else
-        namebox.style.backgroundColor = "#EFFFC9";
-
-      if(phone.value === '') {
-        phone.style.backgroundColor = "#FABCBC";
-        formValid = false;
-      }
-      else
-        phone.style.backgroundColor = "#EFFFC9";
-
-      if(email.value === '') {
-        email.style.backgroundColor = "#FABCBC";
-        formValid = false;
-      }
-      else
-        email.style.backgroundColor = "#EFFFC9";
-
-      if (formValid === true)
-        tyBox.innerHTML = "THANK YOU FOR SIGNING UP!";
-      }
-  </script>
 </body>
       
 </html>
