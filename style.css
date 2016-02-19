@@ -92,7 +92,7 @@ button {
 }
 
 #bodyWrapper input {
-  height: 1.5em;
+  height: 1.6em;
   width: 75%;
   
 }
@@ -103,8 +103,8 @@ label {
 }
 
 select {
-  height: 2em;
-  width: 40.75%;
+  height: 1.7em;
+  width: 75%;
   box-sizing: content-box;
 }
 
