@@ -61,7 +61,7 @@ body {
 h1 {
   display: inline;
   font-family: 'Patua One', cursive;
-  font-size: 3.375em;
+  font-size: 1.4em;
   color: beige;
 }
 
@@ -93,7 +93,8 @@ button {
 
 #bodyWrapper input {
   height: 1.5em;
-  width: 40%;
+  width: 75%;
+  
 }
 
 label {
@@ -104,10 +105,10 @@ label {
 select {
   height: 2em;
   width: 40.75%;
+  box-sizing: content-box;
 }
 
 #sethpic {
-  display: flex;
   width: 100%;
   margin-left: auto;
   margin-right: auto;
@@ -132,13 +133,9 @@ select {
   line-height: 2em;
 }
 
-
-
-
-
-@media (max-width: 600px){
+@media (min-width: 700px){
   h1 {
-    font-size: 1.4em;
+    font-size: 3.375em;
   }
 }
 
