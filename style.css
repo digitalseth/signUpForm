@@ -106,8 +106,6 @@ select {
     width: 40.75%;
 }
 
-
-
 #sethpic {
     display: flex;
     width: 100%;
@@ -118,7 +116,6 @@ select {
     animation-name: customFade;
 }
 
-//fade animation
 @keyframes customFade {
     from {
         opacity: .01;
@@ -127,12 +124,6 @@ select {
     to {
         opacity: 1;
     }
-}
-
-#notebookpic {
-    float: left;
-    width: 4em;
-    margin-right: 1em;
 }
 
 #thankYouBox {
@@ -146,10 +137,6 @@ select {
 
 
 @media (max-width: 600px){
-    #notebookpic {
-        display: none;
-    }
-    
     h1 {
         font-size: 1.4em;
     }
